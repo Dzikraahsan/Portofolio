@@ -1,0 +1,29 @@
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+ }
+ 
+ [data-theme="dark"] {
+    --color-bg: #000000;
+    --color-fg: #ffffff;
+ }
+ 
+ body {
+   background-color: var(--color-bg);
+   color: var(--color-fg);
+   display: block;
+   min-height: 100px;
+   place-items: center;
+ }
+ 
+ button {
+   font-size: 15px;
+   font-weight: bold;
+   padding: 3px 2px;
+   transition: all var(--global-transition-time) ease-in-out;
+   border-radius: 10px;
+   cursor: pointer;
+   color: var(--color-fg);
+   background-color: var(--color-bg);
+   border: 3px solid var(--color-fg);
+ }
